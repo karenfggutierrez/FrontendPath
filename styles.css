@@ -5,7 +5,7 @@
 
 body {
     background-color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
@@ -18,8 +18,8 @@ h2 {
 }
 
 header {
-position: relative;
-height: 8.5rem;
+    position: relative;
+    height: 8.5rem;
 }
 
 #background-image {
@@ -64,7 +64,7 @@ nav li {
 }
 
 #hotsale {
-word-spacing: 0;
+    word-spacing: 0;
 }
 
 .link {
@@ -101,7 +101,7 @@ section {
 }
 
 #principal:hover {
-    transform:scale(1.1);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -134,8 +134,8 @@ section {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
- 
-#secondary p{
+
+#secondary p {
     font-size: 75%;
     text-align: justify;
 }
@@ -198,6 +198,7 @@ footer p {
     border-left: 100px solid transparent;
     transform: rotate(35deg);
 }
+
 .estrella:before {
     border-bottom: 80px solid rgb(248, 252, 52);
     border-left: 30px solid transparent;
@@ -211,6 +212,7 @@ footer p {
     content: '';
     transform: rotate(-35deg);
 }
+
 .estrella:after {
     position: absolute;
     display: block;
@@ -252,10 +254,11 @@ footer p {
 }
 
 @keyframes rotate {
-   from {
-       transform:  rotate(0deg) scale(0.1);
-   } 
-   to {
-       transform: rotate(360deg) scale(0.2);
-   }
+    from {
+        transform: rotate(0deg) scale(0.1);
+    }
+
+    to {
+        transform: rotate(360deg) scale(0.2);
+    }
 }
