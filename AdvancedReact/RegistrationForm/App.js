@@ -18,14 +18,25 @@ function App() {
   });
   const [role, setRole] = useState("role");
 
-  const getIsFormValid = () => {
-    // Implement this function
-    return true;
-  };
-
-  const clearForm = () => {
-    // Implement this function
-  };
+  const getIsFormValid = () => { 
+    return ( 
+      firstName && 
+      validateEmail(email) && 
+      password.value.length >= 8 && 
+      role !== "role" 
+    ); 
+  }; 
+ 
+  const clearForm = () => { 
+    setFirstName(""); 
+    setLastName(""); 
+    setEmail(""); 
+    setPassword({ 
+      value: "", 
+      isTouched: false, 
+    }); 
+    setRole("role"); 
+   };    
 
   const handleSubmit = () => {
     alert("Account created!");
